@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --vermelho: hsl(0, 100%, 67%);
+    --laranja_amarelado: hsl(39, 100%, 56%);
+    --verde_claro: hsl(166, 100%, 37%);
+    --azul_escuro: hsl(234, 85%, 45%);
+    --branco: hsl(0, 0%, 100%);
+    --azul_claro: hsl(221, 100%, 96%);
+    --lavanda_claro: hsl(241, 100%, 89%);
+    --azul_escuro: hsl(224, 30%, 27%);
+
+    /*Gradientes e backgraunds*/
+    --roxo_fundo: hsl(252, 100%, 67%);
+    --azul_fundo: hsl(241, 81%, 54%);
+    --azul: hsla(256, 72%, 46%, 1);
+    --azul_persiano_circulo: hsla(241, 72%, 46%, 0);
+}
+
+ body {
+    background-color: hsl(221, 100%, 96%, 0.9); /*opacidade 0.2*/
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: var(--branco); /*opacidade 0.2*/
+    display: flex;
+    flex-direction: row;
+    width: 40rem;
+    border-radius: 0 1rem 1rem 0;
+    height: 25rem;
+}
+
+.card_resultado {
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 10%, hsl(241, 81%, 54%) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    width: 20rem;
+}
+
+.card_informações {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+.titulo {
+    color: var(--azul_claro);
+    font-size: 18px;
+    padding: 1.5rem 0 2rem 0;
+    opacity: 0.6;
+}
+
+.card_resultado_circulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 50%,  hsl(241, 81%, 54%) 110%);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px; 
+}
+
+.resultado-principal {
+    color: var(--branco);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.valor_máximo {
+    color: var(--azul_claro);
+    font-size: 0.8rem;
+    font-weight: 700;
+    opacity: 0.6;
+}
+
+.card_resultado_score {
+    color: var(--branco);
+    font-size: 1.2rem;
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.card_resultado_texto {
+    display: flex;
+    justify-content: center;
+}
+
+.card_resultado_texto-principal {
+    color: var(--branco);
+    opacity: 0.6;
+    font-size: 1rem;
+    padding: 0.6rem 0;
+    text-align: center;
+    max-width: 70%; 
+    line-height: 1rem;
+}
+
+.card_informações_titulo {
+    width: 70%;
+    background-color: aqua;
+    padding-left: 3rem;
+}
+
+.card_informações_habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.card_informações_reaction {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: hsl(0, 100%, 67%, 0.1);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.card_informações_memory {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: hsl(39, 100%, 56%, 0.1);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.card_informações_verbal {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: hsl(166, 100%, 37%, 0.1);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.card_informações_visual {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: hsl(234, 85%, 45%, 0.1);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.icone_reaction{
+    content: url(./assets/images/icon-reaction.svg);
+}
+
+.icone_memory{
+    content: url(./assets/images/icon-memory.svg);
+}
+
+.icone_verbal{
+    content: url(./assets/images/icon-verbal.svg);
+}
+
+.icone_visual{
+    content: url(./assets/images/icon-visual.svg);  
+}
+
+.reaction_score{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.reaction_memory{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.reaction_verbal{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.reaction_visual{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.reaction_score_name {
+    color: var(--vermelho);
+}
+
+.memory_score_name {
+    color: var(--laranja_amarelado);
+}
+
+.verbal_score_name {
+    color: var(--verde_claro);
+}
+
+.visual_score_name {
+    color: var(--azul);
+}
+
+
+.card_informações_botão {
+
+}
+
+
+
